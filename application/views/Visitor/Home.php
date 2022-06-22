@@ -51,7 +51,7 @@
                     <li><a class="nav-link active" href="#header">Home</a></li>
                     <li><a class="nav-link" href="#about">About</a></li>
                     <li><a class="nav-link" href="#resume">Resume</a></li>
-                    <li><a class="nav-link" href="#services">Services</a></li>
+                    <li><a class="nav-link" href="#services">Event</a></li>
                     <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
                     <li><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
@@ -64,7 +64,7 @@
                 <a href="https://www.instagram.com/wiwit_ab/?hl=en" class="instagram"><i class="bi bi-instagram"></i></a>
                 <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
-
+            
         </div>
     </header><!-- End Header -->
 
