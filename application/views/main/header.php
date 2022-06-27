@@ -53,7 +53,10 @@
                     <li><a class="nav-link <?= $this->uri->segment(1) == 'resume' ? 'active' : '' ?> " href="<?= site_url('resume') ?> ">Resume</a></li>
                     <li><a class="nav-link <?= $this->uri->segment(1) == 'service' ? 'active' : '' ?>" href="<?= site_url('service') ?>">Services</a></li>
                     <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                    <li><a class="nav-link <?= $this->uri->segment(1) == 'contact' ? 'active' : '' ?> " href="<?= site_url('contact') ?>">Contact</a></li>
+                    <li>
+                        <button type="button" class="btn btn-success">Login</button>
+                    </li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
