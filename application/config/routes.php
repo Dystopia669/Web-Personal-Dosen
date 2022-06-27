@@ -57,3 +57,4 @@ $route['home'] = 'HomeController/index';
 $route['about'] = 'AboutController/index';
 $route['resume'] = 'ResumeController/index';
 $route['service'] = 'ServiceController/index';
+$route['contact'] = 'ContactController/index';
