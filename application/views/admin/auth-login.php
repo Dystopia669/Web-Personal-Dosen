@@ -24,25 +24,25 @@
                                 <h3>Sign In</h3>
                                 <p>Please sign in to continue to Voler.</p>
                             </div>
-                            <form action="index.html">
+                            <form action="<?= site_url('LoginController/login') ?>" method="POST">
                                 <div class="form-group position-relative has-icon-left">
-                                    <label for="username">Username</label>
-                                    <div class="position-relative">
-                                        <input type="text" class="form-control" id="username">
-                                        <div class="form-control-icon">
-                                            <i data-feather="user"></i>
-                                        </div>
+                                    <label for="email">Email</label>
+                                    <input name="email" placeholder="email" type="text" class="form-control">
+                                </div>
+                                <div class="position-relative">
+                                    <div class="form-control-icon">
+                                        <i data-feather="user"></i>
                                     </div>
                                 </div>
                                 <div class="form-group position-relative has-icon-left">
                                     <div class="clearfix">
-                                        <label for="password">Password</label>
+                                        <label for="password" name="password">Password</label>
+                                        <input name="password" placeholder="Password" type="password" class="form-control">
                                         <a href="auth-forgot-password.html" class='float-end'>
                                             <small>Forgot password?</small>
                                         </a>
                                     </div>
                                     <div class="position-relative">
-                                        <input type="password" class="form-control" id="password">
                                         <div class="form-control-icon">
                                             <i data-feather="lock"></i>
                                         </div>
@@ -59,10 +59,12 @@
                                     </div>
                                 </div>
                                 <div class="clearfix">
-                                    <button class="btn btn-primary float-none">Submit</button>
-                                    <button class="btn btn-primary float-end"><a href="<?= site_url('home') ?>"> ke halaman Visitor</a></button>
+                                    <button type="submit" class="btn btn-primary mb-2 float-none">Submit</button>
                                 </div>
                             </form>
+                            <div class="divider">
+                                <a class="<?= $this->uri->segment(1) == 'home' ? 'active' : '' ?>" href="<?= site_url('home') ?>">KEMBALI KE HALAMAN VISITOR</a>
+                            </div>
                             <div class="divider">
                                 <div class="divider-text">OR</div>
                             </div>

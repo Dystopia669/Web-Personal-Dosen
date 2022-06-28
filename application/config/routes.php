@@ -59,3 +59,4 @@ $route['resume'] = 'ResumeController/index';
 $route['service'] = 'ServiceController/index';
 $route['contact'] = 'ContactController/index';
 $route['login'] = 'LoginController/index';
+$route['dashboard'] = 'DashboardController/index';
